@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
   "files": [
     "base.json",
     "nextjs.json",

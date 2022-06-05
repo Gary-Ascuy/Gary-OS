@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "./src/index.tsx",
   "types": "./src/index.tsx",
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/**.ts*"

@@ -2,6 +2,7 @@
   "name": "gary-os",
   "version": "0.0.0",
   "private": true,
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
   "workspaces": [
     "apps/*",
     "core/*",
