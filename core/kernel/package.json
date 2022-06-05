@@ -1,5 +1,5 @@
 {
-  "name": "kernel",
+  "name": "@garyos/kernel",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",

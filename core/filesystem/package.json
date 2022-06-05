@@ -1,0 +1,26 @@
+{
+  "name": "@garyos/filesystem",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "garyos",
+    "filesystem"
+  ],
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.4"
+  },
+  "dependencies": {
+    "web-streams-polyfill": "^3.2.1",
+    "@garyos/kernel": "*",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
+  }
+}
