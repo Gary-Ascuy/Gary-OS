@@ -1,0 +1,15 @@
+{
+  "name": "kernel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "web-streams-polyfill": "^3.2.1"
+  }
+}

@@ -4,6 +4,7 @@
   "private": true,
   "main": "index.js",
   "author": "Gary Ascuy <gary.ascuy@gmail.com>",
+  "license": "MIT",
   "files": [
     "base.json",
     "nextjs.json",
