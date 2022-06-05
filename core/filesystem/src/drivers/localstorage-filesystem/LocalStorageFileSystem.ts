@@ -1,5 +1,5 @@
 import { BaseFileSystem, FileStream, VirtualFile } from '@garyos/kernel'
-import isString from 'lodash/isString'
+import { isString } from 'lodash'
 import { WritableStream, ReadableStream } from 'web-streams-polyfill'
 import { FileDoesNotExistError } from '../../errors/FileDoesNotExistError'
 import { FileOpenInOtherProcessError } from '../../errors/FileOpenInOtherProcessError'

@@ -1,6 +1,5 @@
 import { BaseFileSystem, FileStream, VirtualFile, VirtualFileSystem } from '@garyos/kernel'
-import isString from 'lodash/isString'
-import startsWith from 'lodash/startsWith'
+import { isString, startsWith } from 'lodash'
 
 import { MemoryFileSystem } from './drivers/memory-filesystem/MemoryFileSystem'
 

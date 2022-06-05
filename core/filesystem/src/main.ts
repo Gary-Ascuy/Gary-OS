@@ -1,5 +1,5 @@
 import { VirtualFile, VirtualFileKind } from '@garyos/kernel'
-import concat from 'lodash/concat'
+import { concat } from 'lodash'
 
 import { InvalidFileReferenceError } from './errors/InvalidFileReferenceError'
 

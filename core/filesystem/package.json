@@ -14,13 +14,17 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.1",
+    "@types/lodash": "^4.14.182",
+    "@types/uuid": "^8.3.4",
     "jest": "^28.1.0",
+    "jest-localstorage-mock": "^2.4.21",
     "ts-jest": "^28.0.4"
   },
   "dependencies": {
-    "web-streams-polyfill": "^3.2.1",
     "@garyos/kernel": "*",
+    "@octokit/rest": "^18.12.0",
     "lodash": "^4.17.21",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "web-streams-polyfill": "^3.2.1"
   }
 }

@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid'
 import { BaseFileSystem, FileStream, VirtualFile } from '@garyos/kernel'
 import { WritableStream, ReadableStream } from 'web-streams-polyfill'
-import isString from 'lodash/isString'
+import { isString } from 'lodash'
 
 import { MemoryDisk } from './MemoryDisk'
 import { MemoryFile } from './MemoryFile'
@@ -11,7 +11,7 @@ import { InvalidFileModeError } from '../../errors/InvalidFileModeError'
 import { FileDoesNotExistError } from '../../errors/FileDoesNotExistError'
 
 export class MemoryFileSystem extends BaseFileSystem {
-  private _disk: MemoryDisk = { index: {}, data: {} }
+  private _disk: MemoryDisk = { index: { }, data: {} }
 
   async mount(): Promise<void> {
   }
@@ -28,7 +28,7 @@ export class MemoryFileSystem extends BaseFileSystem {
   }
 
   public async free(file: VirtualFile | string): Promise<void> {
-    const path = isString(file) ? file : file.path
+    const path: string = isString(file) ? file : (file as VirtualFile).path || ''
     this._disk.index[path].lock = false
   }
 
