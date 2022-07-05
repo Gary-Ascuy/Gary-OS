@@ -1,10 +1,10 @@
 import WindowProps from '../Window/Window'
 import { WindowOption } from '../Window/WindowOption'
 
-export default function Terminal({ title, box }: WindowOption) {
+export default function Finder({ title, box }: WindowOption) {
   return (
     <WindowProps title={title}>
-      <div>this is a terminal</div>
+      <div>this is a Finder</div>
     </WindowProps>
   )
 }

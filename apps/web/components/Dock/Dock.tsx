@@ -5,13 +5,14 @@ import style from './Dock.module.css'
 
 export interface DockProps {
   items: DockOption[]
+  addApp: (props: any) => void
 }
 
-export default function Dock({ items }: DockProps): JSX.Element {
+export default function Dock({ items, addApp }: DockProps): JSX.Element {
   return (
     <section className={style.dock}>
       <section className={style.container}>
-        {items.map((item) => <DockItem key={item.id} {...item} />)}
+        {items.map((item) => <DockItem key={item.id} {...item} onClick={() => item.action(addApp)} />)}
       </section>
     </section>
   )

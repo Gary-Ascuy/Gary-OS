@@ -3,5 +3,5 @@ export interface DockOption {
   name: string
   icon: string
 
-  action: () => Promise<void>
+  action: (open: (props: any) => void) => Promise<void>
 }
