@@ -17,6 +17,11 @@
   border-radius: .75rem;
   box-shadow: inset 0 0 0 .9px hsla(var(--app-color-dark-hsl), .3), 0 0 0 1px hsla(var(--app-color-light-hsl), .5);
   background-color: var(--app-color-light);
+
+  left: 0;
+  top: 0;
+  width: '100%';
+  height: '100%';
 }
 
 .body {
