@@ -2,15 +2,22 @@
   "name": "gary-os",
   "version": "0.0.0",
   "private": true,
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "core/*",
+    "packages/*",
+    "utils/*"
   ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   },
   "devDependencies": {
     "eslint-config-custom": "latest",
