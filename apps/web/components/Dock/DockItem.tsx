@@ -1,15 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { DockOption } from './DockOption'
+import { IDockItem } from '../Desktop/core/dock'
+
 import style from './DockItem.module.css'
 
-export interface DockItemProps extends DockOption {
-  onClick: () => void
+export interface IDockItemProps {
+  item: IDockItem
 }
 
-export default function DockItem({ id, name, icon, onClick }: DockItemProps): JSX.Element {
+export default function DockItem({ item }: IDockItemProps): JSX.Element {
+  const { id, name, icon, action } = item
+
   return (
-    <button className={style.item} title={name} onClick={onClick}>
+    <button className={style.item} title={name} onClick={action}>
       <span>
         <p className={style.tooltip}>{name}</p>
         <img className={style.icon} src={icon} alt={name}></img>
