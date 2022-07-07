@@ -1,4 +1,4 @@
-import { useRecoilState } from 'recoil'
+import { useRecoilValue } from 'recoil'
 
 import MenuItem from './MenuItem'
 import Clock from './Clock'
@@ -7,12 +7,12 @@ import { menu } from '../Desktop/core/menu'
 import style from './Menu.module.css'
 
 export default function Menu(): JSX.Element {
-  const [main] = useRecoilState(menu);
+  const { items } = useRecoilValue(menu);
 
   return (
     <header className={style.menu}>
       <section className={style.section}>
-        {main.items.map((item: any) => <MenuItem key={item.id} {...item}></MenuItem>)}
+        {items.map((item: any) => <MenuItem key={item.id} {...item}></MenuItem>)}
       </section>
 
       <section style={{ flex: 'auto' }}></section>
