@@ -1,18 +1,18 @@
-import { MenuOption } from './MenuOption'
+import { useRecoilState } from 'recoil'
+
 import MenuItem from './MenuItem'
+import Clock from './Clock'
+import { menu } from '../Desktop/core/menu'
 
 import style from './Menu.module.css'
-import Clock from './Clock'
 
-export interface MenuProps {
-  items: MenuOption[]
-}
+export default function Menu(): JSX.Element {
+  const [main] = useRecoilState(menu);
 
-export default function Menu({ items }: MenuProps): JSX.Element {
   return (
     <header className={style.menu}>
       <section className={style.section}>
-        {items.map((item) => <MenuItem key={item.id} {...item}></MenuItem>)}
+        {main.items.map((item: any) => <MenuItem key={item.id} {...item}></MenuItem>)}
       </section>
 
       <section style={{ flex: 'auto' }}></section>

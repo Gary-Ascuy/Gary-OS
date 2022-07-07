@@ -57,10 +57,6 @@ const Apps: { [key: string]: (args: any) => JSX.Element } = {
   'Finder': Finder,
 }
 
-const state = {
-  process: 0
-}
-
 export default function Desktop() {
   const [apps, setApps] = useState<IWindowProps[]>(windows)
   const addApp = useCallback((app: any) => {
@@ -74,7 +70,7 @@ export default function Desktop() {
 
   return (
     <>
-      <Menu items={menus}></Menu>
+      <Menu></Menu>
       {apps.map((props: IWindowProps) => load(props))}
       <Dock items={docks} addApp={addApp}></Dock>
     </>
