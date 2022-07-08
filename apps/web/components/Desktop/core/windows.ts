@@ -20,7 +20,7 @@ export const windows = atom<IMainWindowManager>({
   default: {
     apps: [
       { title: 'Terminal', app: 'Terminal', pid: uuidv4() },
-      { title: 'Gary Ascuy', app: 'Finder', pid: uuidv4() },
+      { title: 'Code', app: 'VSCode', pid: uuidv4() },
     ],
   },
 })
